@@ -10,3 +10,10 @@ spring:
 camunda:
   bpm:
     job-execution.deployment-aware: true
+
+zuul:
+  endpoints.routes.enabled: false
+  routes:
+    async_deployment:
+      path: /camunda-bpm-engine/**
+      url: http://localhost:8090/forms
