@@ -16,4 +16,4 @@ zuul:
   routes:
     async_deployment:
       path: /camunda-bpm-engine/**
-      url: http://localhost:8090/forms
+      url: http://camunda-bpm-engine:8090/forms
