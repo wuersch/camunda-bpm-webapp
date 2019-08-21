@@ -11,7 +11,7 @@ RUN mkdir -p target/extracted
 RUN unzip target/camunda-webapp-0.1.0.jar -d target/extracted
 
 ## Actual camunda engine image
-FROM openjdk:8-jdk-alpine
+FROM openjdk:8-jre-alpine
 
 EXPOSE 8080
 
